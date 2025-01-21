@@ -7,7 +7,7 @@ const port = 3000;
 
 // Load secrets from AWS Secrets Manager
 const getSecrets = async () => {
-    const client = new AWS.SecretsManager({ region: 'us-east-1' });
+    const client = new AWS.SecretsManager({ region: 'us-east-2' });
     const secretName = 'mysql-db-credentials';
 
     try {
